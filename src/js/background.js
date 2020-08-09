@@ -1,11 +1,12 @@
 const section = document.querySelector('section');
 
 const bgColors = [
-    '#2196f3',
     '#e91e63',
     '#ffed3b',
     '#74ff1d',
-    '#553119',
+    '#e66f20',
+    '#ae47d6',
+    '#2028fa',
     '#9e136e',
 ]
 
