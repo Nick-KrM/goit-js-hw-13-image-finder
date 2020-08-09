@@ -1,3 +1,4 @@
+import './js/background';
 import newsService from './js/news-service';
 import updateArticlesMarkup from './js/update-articles-markup';
 import LoadMoreBtn from './js/components/load-more-button';
@@ -42,3 +43,5 @@ function fetchArticles() {
 function clearArticlesContainer() {
   refs.articlesContainer.innerHTML = '';
 }
+
+// Добавить: infinite Scroll (разобратся с лицензией), плагин нотификации и модалку.
