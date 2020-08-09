@@ -1,0 +1,127 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #212121;
+}
+
+section {
+  // margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.button > .spinner.is-hidden {
+  display: none;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-auto-rows: 240px;
+  grid-gap: 12px;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery__item {
+  position: relative;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.photo-card {
+  position: relative;
+  text-decoration: none;
+  height: 100%;
+  transition: transform 200ms ease-in-out;
+}
+
+.photo-card:hover {
+  transform: scale(1.04);
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stats {
+  position: relative;
+  bottom: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(45, 226, 226);
+  opacity: 0;
+  transition: opacity 200ms linear;
+  &.stats-item {
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.gallery__item:hover .stats {
+  opacity: 1;
+}
+
+// Footer ---------->
+
+footer {
+  margin: 0;
+}
+
+.foot_text {
+  position: fixed;
+  width: 100%;
+  background-color: #ffff;
+  opacity: 0.9;
+  z-index: 1;
+
+  height: 50px;
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 13px;
+  bottom: 0;
+  border-top: 2px ridge rgba(75, 170, 194, 0.61);
+  font-size: 15px;
+  color: lightslategray;
+}

@@ -19,9 +19,9 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
   },
-  "homepage": "https://Nick-KrM.github.io/goit-js-hw-12-countries/",
+  "homepage": "https://Nick-KrM.github.io/goit-js-hw-13-image-finder/",
   "devDependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@pnotify/bootstrap3": "^5.1.2",
@@ -53,10 +53,12 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.2",
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
     "lodash": "^4.17.19",
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "^4.0.8",
+    "material-design-icons": "^3.0.1",
+    "material-design-icons-iconfont": "^5.0.1"
   }
 }
