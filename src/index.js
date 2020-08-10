@@ -29,9 +29,15 @@ function fetchArticles() {
   loadMoreBtn.disable();
 
   newsService.fetchArticles().then(hits => {
-    updateArticlesMarkup(hits);
-    loadMoreBtn.show();
-    loadMoreBtn.enable();
+    
+    if (hits.length === 12) {
+      updateArticlesMarkup(hits);
+      loadMoreBtn.show();
+      loadMoreBtn.enable();
+    } else {
+      updateArticlesMarkup(hits);
+      loadMoreBtn.hide();
+    };
 
     window.scrollTo({
       top: document.documentElement.offsetHeight,
